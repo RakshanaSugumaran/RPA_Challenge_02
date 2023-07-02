@@ -1,0 +1,17 @@
+The goal is to generate employee id and email id for the newly onboarded employees
+
+Website link: https://excelcult.com/hr-on-boarding-process-form/
+
+1. Use Workbook activity to fetch data from the excel file with employee data
+2. Save the output to data table "dt_EmployeeDetails"
+3. Using open browser open the portal link "https://excelcult.com/hr-on-boarding-process-form/"
+4. Use For each row in datatable loop activity to loop through each row
+(inside the loop order the below activities)
+5. To clear any prevoius data click on the "New Registration" using click activity
+6. Fill First Name. Last Name, DOB, Designation, Mobile Number from dt_EmployeeDetails
+7. Use if condition to check the gender and use check activity to check the gender radio button
+8. Using check activity check the check box for Terms and Mailing 
+9. Using click activity "Submit" 
+10. Using get text activity get the "Employee ID" generated from the portal and save it to the respective record in excel
+11. Using the get text activity get the "Official Mail Id" generated from the portal and save it to the respective record in excel
+12. Repeat the same for all data in the given excel
